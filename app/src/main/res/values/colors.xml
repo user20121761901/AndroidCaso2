@@ -15,4 +15,5 @@
     <color name="bg_card_hover">#DFCCFB</color>
     <color name="bg_button">#3D246C</color>
     <color name="bg_buttonCircle">#643AB3</color>
+    <color name="bg_toast">#262b25</color>
 </resources>

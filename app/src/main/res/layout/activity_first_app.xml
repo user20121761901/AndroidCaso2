@@ -72,16 +72,16 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal">
-
+            <!--
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/bg_buttonCircle"
+                android:contentDescription="@string/btnDescripcion"
                 android:src="@drawable/ic_remove"
-                app:tint="@color/white"
-                android:contentDescription="@string/btnDescripcion" />
-
+                app:tint="@color/white" />
+            -->
             <EditText
                 android:id="@+id/etPrecio"
                 android:layout_width="60dp"
@@ -90,19 +90,19 @@
                 android:autofillHints=""
                 android:hint="@string/etPrecio"
                 android:inputType="numberDecimal" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnRemove"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/bg_buttonCircle"
-                android:src="@drawable/ic_add"
-                app:tint="@color/white"
-                android:contentDescription="@string/btnDescripcion" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.cardview.widget.CardView>
-    <!-- Tarjeta Cantidad -->
+                <!--
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnRemove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bg_buttonCircle"
+                    android:contentDescription="@string/btnDescripcion"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/white" />
+                -->
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+        <!-- Tarjeta Cantidad -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cvCantidad"
         android:layout_width="0dp"
@@ -137,13 +137,14 @@
 
     </androidx.cardview.widget.CardView>
     <!-- Tarjeta Boton -->
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnProcesar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/bg_button"
         android:text="@string/btnProcesar"
         android:textAllCaps="true"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
