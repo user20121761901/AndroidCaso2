@@ -4,6 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:paddingHorizontal="50dp"
+    android:paddingVertical="30dp"
     tools:context=".FirstAppActivity">
+    <!-- Titulo -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitulo"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cvMarca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Tarjeta Marca -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMarca"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/bg_card"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/cvPrecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMarca"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerMarcas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <!-- Tarjeta Precio -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPrecio"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/bg_card"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/cvCantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvMarca">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bg_buttonCircle"
+                android:src="@drawable/ic_remove"
+                app:tint="@color/white"
+                android:contentDescription="@string/btnDescripcion" />
+
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:autofillHints=""
+                android:hint="@string/etPrecio"
+                android:inputType="numberDecimal" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bg_buttonCircle"
+                android:src="@drawable/ic_add"
+                app:tint="@color/white"
+                android:contentDescription="@string/btnDescripcion" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <!-- Tarjeta Cantidad -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCantidad"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/bg_card"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnProcesar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvPrecio">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvCantidad"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+    <!-- Tarjeta Boton -->
+    <Button
+        android:id="@+id/btnProcesar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bg_button"
+        android:text="@string/btnProcesar"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvCantidad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

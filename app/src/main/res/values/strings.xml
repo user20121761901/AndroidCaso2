@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">AndroidCaso2</string>
+    <!--String de Titulo -->
+    <string name="txtTitulo">Ingrese datos del telefono</string>
+    <!--String de Marca -->
+    <string name="tvMarca">Seleccione la marca</string>
+    <!--
+    <string-array name="spinnerMarcas">
+        <item>Seleccione</item>
+        <item>HTC</item>
+        <item>Huawei</item>
+        <item>Samsung</item>
+    </string-array>
+    -->
+    <!--String de Precio -->
+    <string name="etPrecio">Precio</string>
+    <!--String de Cantidad -->
+    <string name="tvCantidad">Selecciona la cantidad</string>
+    <!--
+    <string-array name="spinnerNumeros">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    -->
+    <!--String de Boton -->
+    <string name="btnProcesar">Procesar</string>
+    <string name="btnDescripcion">Botones del precio</string>
 </resources>
