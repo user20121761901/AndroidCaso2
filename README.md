@@ -5,7 +5,7 @@ Se realizó un trabajo entregable del curso de  **Desarrollo de aplicaciones mó
 
 # Aplicación móvil con Kotlin
 
-Programa de móvil desarrollado con [Kotlin](https://developer.android.com/kotlin?gclid=Cj0KCQjwuNemBhCBARIsADp74QTMsiAxPY617Uu3Rf_JCVBZQAc-mXePrznxVQj1WM6c1JcMdXt47M4aAniOEALw_wcB&gclsrc=aw.ds&hl=es-419), diseñada para calcular el costo total de dispositivos celulares basado en su marca, precio unitario y cantidad. La aplicación fue creada utilizando [Android Studio Giraffe v2022.3.1](https://developer.android.com/studio)
+Programa de móvil desarrollado con [Kotlin](https://kotlinlang.org/), diseñada para calcular el costo total de dispositivos celulares basado en su marca, precio unitario y cantidad. La aplicación fue creada utilizando [Android Studio Giraffe v2022.3.1](https://developer.android.com/studio)
 
 ## Descarga del proyecto
 
